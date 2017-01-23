@@ -46,7 +46,7 @@ data class Field(
     return JavaTypeResolver(customScalarTypeMap, packageName).resolve(responseType, isOptional())
   }
 
-  fun normalizedName() = responseName.capitalize().singularize()
+  fun normalizedName() = responseName.singularize().capitalize()
 
   private fun methodResponseType(): String {
     if (isNonScalar() || hasFragments()) {

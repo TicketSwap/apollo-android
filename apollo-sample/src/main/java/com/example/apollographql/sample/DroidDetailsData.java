@@ -17,7 +17,7 @@ public abstract class DroidDetailsData implements DroidDetails.Data {
   }
 
   @AutoValue
-  public abstract static class Species implements Specy {
+  public abstract static class Species implements DroidDetails.Data.Species {
     public static JsonAdapter<Species> jsonAdapter(Moshi moshi) {
       return new AutoValue_DroidDetailsData_Species.MoshiJsonAdapter(moshi);
     }
