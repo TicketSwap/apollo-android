@@ -7,7 +7,7 @@ dependencies {
   compile dep.moshi
   compile dep.jsr305
   compile dep.retrofitMoshiConverter
-  compile project (":apollo-api")
+  compileOnly project (":apollo-api")
 
   testCompile dep.junit
   testCompile dep.truth
